@@ -26,8 +26,13 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # ----------- Authentication --------------
 gem 'devise'
 gem 'simple_token_authentication'
-# ----------- Authentication --------------
 
+
+# ----------- Serialization --------------
+gem "active_model_serializers"
+
+
+# ----------- Testing --------------
 gem 'rspec',        group: [:development, :test]
 gem 'rspec-rails',  group: [:development, :test]
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
