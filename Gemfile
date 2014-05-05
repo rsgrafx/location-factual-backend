@@ -33,6 +33,7 @@ gem "active_model_serializers"
 
 
 # ----------- Testing --------------
+gem 'minitest'
 gem 'rack-test',          group: [:development, :test]
 gem 'factory_girl_rails', group: [:development, :test]
 gem 'rspec',              group: [:development, :test]

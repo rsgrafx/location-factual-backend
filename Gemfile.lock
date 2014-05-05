@@ -164,6 +164,7 @@ DEPENDENCIES
   factory_girl_rails
   jbuilder (~> 2.0)
   jquery-rails
+  minitest
   rack-test
   rails (= 4.1.0)
   rspec
