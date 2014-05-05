@@ -1,11 +1,14 @@
 Rails.application.routes.draw do
   
   devise_for :users
-  namespace :static do 
-    get 'home',     to: 'home#index'
-    get 'about',    to: 'home#about'
-    get 'support',  to: 'home#help'
-  end
+
+  # will be handled by angular app. 
+  # namespace :static do 
+  #   get 'home',     to: 'home#index'
+  #   get 'about',    to: 'home#about'
+  #   get 'support',  to: 'home#help'
+  # end
+  # 
 
   namespace :api, default: :json do 
     namespace :v1 do
