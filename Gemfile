@@ -33,10 +33,12 @@ gem "active_model_serializers"
 
 
 # ----------- Testing --------------
-gem 'rspec',        group: [:development, :test]
-gem 'rspec-rails',  group: [:development, :test]
+gem 'rack-test',          group: [:development, :test]
+gem 'factory_girl_rails', group: [:development, :test]
+gem 'rspec',              group: [:development, :test]
+gem 'rspec-rails',        group: [:development, :test]
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',       group: :development
+gem 'spring',             group: :development
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
