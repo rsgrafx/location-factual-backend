@@ -10,12 +10,15 @@ Rails.application.routes.draw do
   # end
   # 
 
-  namespace :api, default: :json do 
-    namespace :v1 do
+  namespace :api, format: :json do 
+    
+    scope 'v1' do
 
       get :search,        to: 'places#search'
 
       get 'guides/:slug',  to:  'guides#show'
+
+      resources :places
 
       resources :users do
 
