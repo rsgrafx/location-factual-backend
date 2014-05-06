@@ -31,8 +31,13 @@ gem 'simple_token_authentication'
 # ----------- Serialization --------------
 gem "active_model_serializers"
 
+# ----------- Cross-Origin-Resource-Sharing -----------
+
+gem 'rack-cors', require: 'rack/cors'
 
 # ----------- Testing --------------
+
+
 gem 'minitest'
 gem 'rack-test',          group: [:development, :test]
 gem 'factory_girl_rails', group: [:development, :test]

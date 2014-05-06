@@ -8,6 +8,17 @@ Bundler.require(*Rails.groups)
 
 module Myhotspot
   class Application < Rails::Application
+    # Allow for CORS -
+
+    config.middleware.use Rack::Cors do 
+
+        allow do
+            origins '127.0.0.1:9393', '127.0.0.1:9000', 'localhost:9393', 'localhost:9000'
+            resource '*', :headers => :any, :methods => [:get, :post, :options]
+         end if Rails.env.development?
+
+    end
+
     config.generators do |g|
         g.test_framework :rspec, 
             fixtures: true,
